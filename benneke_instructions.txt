@@ -1,0 +1,5 @@
+1) Save two tar files in GitHub/jwst directory
+2) condo update —all
+3) conda install sphinx==1.5.6 
+4) ./pandexo.sh
+5) python run_test.py
