@@ -5,7 +5,7 @@ echo 'USRDIR=$HOME' >>~/.bash_profile
 
 ########## BLOCK TO SET STELLAR DATA################
 mkdir $USRDIR/pysynphot_data 
-mv synphot5.tar* $USRDIR/pysynphot_data 
+mv ../jwst/synphot5.tar* $USRDIR/pysynphot_data 
 tar -xvf $USRDIR/pysynphot_data/synphot5.tar || tar -xvf $USRDIR/pysynphot_data/synphot5.tar.gz
 mv grp/hst/cdbs/grid $USRDIR/pysynphot_data
 rm -r grp
@@ -13,8 +13,8 @@ echo 'export PYSYN_CDBS="$USRDIR/pysynphot_data"' >>~/.bash_profile
 
 ############ BLOCK TO SET PANDEIA REFERENCE DATA #########################
 
-tar -xvf pandeia_data-1.2.tar.gz || tar -xvf pandeia_data-1.2.tar
-mv pandeia_data $USRDIR
+tar -xvf ../jwst/pandeia_data-1.2.tar.gz || tar -xvf ../jwst/pandeia_data-1.2.tar
+mv ../jwst/pandeia_data $USRDIR
 echo 'export pandeia_refdata="$USRDIR/pandeia_data"' >>~/.bash_profile
 
 ##############Make sure your bash profile is sourced
